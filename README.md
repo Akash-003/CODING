@@ -1,2 +1,2 @@
 # CODING
-Collaborative practice DS and ALGO
+Solve the questions if you wanna reach heaven!
