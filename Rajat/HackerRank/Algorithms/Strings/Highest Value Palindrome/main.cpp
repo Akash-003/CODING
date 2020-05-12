@@ -36,7 +36,7 @@ string highestValuePalindrome(string s, int n, int k) {
             {
                 palin[l]='9';
             }
-            if(l<'9')
+            if(palin[l]<'9')
             {  
                 if(palin[l]==s[l] && palin[r]==s[r] && k>=2)
                 {
