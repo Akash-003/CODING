@@ -14,7 +14,7 @@ Result FindTotalShops(int input1, int input2[], int input3, int input4[])
 {
     int money;
     sort(input2,input2+input1);
-
+    
     Result ans;
     int shopCount;
     for (int i = 0; i < input3; i++)
@@ -32,11 +32,9 @@ Result FindTotalShops(int input1, int input2[], int input3, int input4[])
             }
             ans.output1[i]=shopCount;
         }
-
-        
         
     }
-    
+   return ans; 
 }
 
 int main()
@@ -56,11 +54,11 @@ int main()
     {
         cin >> input4[i];
     }
-    FindTotalShops(input1,input2,input3,input4);
-    Result ans;
+    Result res;
+    res = FindTotalShops(input1,input2,input3,input4);
     for (int i = 0; i < input3; i++)
     {
-        cout << ans.output1[i]<< " ";
+        cout << res.output1[i]<< " ";
     }
     
     return 0;
