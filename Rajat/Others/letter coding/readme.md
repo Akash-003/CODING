@@ -1,6 +1,6 @@
 # Problem statement
 
-You have to convet the given number into string such that:
+You have to convert the given number into string such that:
     1. odd numbers are represented by 'o'
     2. even numbers are represented by 'e'
     3. positive numbers have 'p' in the beginning
