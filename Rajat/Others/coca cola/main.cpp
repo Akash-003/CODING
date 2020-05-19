@@ -12,14 +12,15 @@ struct Result
 
 Result FindTotalShops(int input1, int input2[], int input3, int input4[])
 {
-    int money;
+    int money = 0;
     sort(input2,input2+input1);
     
     Result ans;
-    int shopCount;
+    int shopCount = 0;
     for (int i = 0; i < input3; i++)
     {
         money=input4[i];
+        shopCount = 0;
         for (int j = 0; j < input1; j++)
         {
             if(money>=input2[j])
