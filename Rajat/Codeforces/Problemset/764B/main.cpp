@@ -3,13 +3,15 @@
 #include <cmath>
 using namespace std;
 
+typedef long long ll;
+
 int main()
 {
     int cubes;
     cin >> cubes;
-    vector<int> cubeNum;
+    vector<ll> cubeNum;
 
-    int temp;
+    ll temp;
     for(int i=0;i<cubes;i++)
     {
         cin >> temp;
@@ -18,16 +20,19 @@ int main()
             
     for (int i = 0; i <= ceil(cubes/2); i++)
     {
-        for (int j = i; j<=ceil(cubes/2); j++)
+        if(i&1)
         {
-            if(j == ceil(cubes/2))
+            continue;
+        }
+        else
+        {
+            if(i == ceil(cubes/2))
             {
                 continue;
             }
-            cubeNum[j] ^=  cubeNum[cubes-j-1];  
-            cubeNum[cubes-j-1] ^=  cubeNum[j];  
-            cubeNum[j] ^=  cubeNum[cubes-j-1];  
-
+            cubeNum[i] ^=  cubeNum[cubes-i-1];  
+            cubeNum[cubes-i-1] ^=  cubeNum[i];  
+            cubeNum[i] ^=  cubeNum[cubes-i-1];  
         }
     }    
     /*for (int p = 0; p < cubes; p++)
