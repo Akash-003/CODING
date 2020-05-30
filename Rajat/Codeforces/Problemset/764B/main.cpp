@@ -18,7 +18,7 @@ int main()
         cubeNum.push_back(temp);
     }
             
-    for (int i = 0; i <= ceil(cubes/2); i++)
+    for (int i = 0; i <= cubes/2; i++)
     {
         if(i&1)
         {
